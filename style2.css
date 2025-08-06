@@ -1,0 +1,135 @@
+/* === Page Layout === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  color: #2c3e50;
+}
+
+/* === Sidebar Style === */
+.profile_tab{
+    display: flex;
+}
+#sidebar{
+    width: 25%;
+}
+#profile_setting{
+    width: 70%;
+}
+
+#sidebar {
+    /* position: fixed; */
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  float: left;
+  margin-right: 30px;
+}
+
+#sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+#sidebar a:hover {
+  background-color: #e0e0e0;
+}
+
+/* === Main Form Style === */
+#profile_setting {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 100wh;
+  overflow: hidden;
+}
+
+#profile_setting h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#profile_setting h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* === Row Style for Inputs === */
+#profile_setting > div > div,
+#Login_info > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#profile_setting label,
+#Login_info label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#profile_setting input[type="text"],
+#profile_setting input[type="number"],
+#profile_setting textarea,
+#Login_info input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#profile_setting input:focus,
+#profile_setting textarea:focus,
+#Login_info input:focus {
+  border-color: #3498db;
+  background-color: #f0faff;
+  outline: none;
+}
+
+/* === Column Layout === */
+#profile_setting div > div,
+#Login_info div > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+#profile_setting textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  #sidebar {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #profile_setting,
+  #Login_info {
+    max-width: 100%;
+  }
+
+  #profile_setting > div > div,
+  #Login_info > div {
+    flex-direction: column;
+  }
+}

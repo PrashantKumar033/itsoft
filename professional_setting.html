@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-YWxg8bWxzD95mk3vb81xDkM/2D7fuAa5DoUQDR3sFXPI9nXbUL8a4WZQlVZWTXQ6ONCtGxRgIY3oITZ+5Ydw0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="">
+        <div id="sidebar">
+            <h2 class="">🚀 Profile Completion</h2>
+            <div class="d-flex justify-content-between align-items-center bg-light p-3 rounded mb-4">
+                <div>Profile Progress</div>
+                <div class="">
+                    <div class="" >
+                        0%
+                    </div>  
+                </div>
+            </div>
+
+            <div class="">
+                <a href="https://hiremyprofile.itsoftexpert.net/settings?profile_settings" class="d-flex align-items-center text-dark text-decoration-none">
+                    <i class="fas fa-user me-2"></i>
+                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
+                    Profile Settings <br><input type="range" max="100" min="0" value="30">
+                </a>
+            </div>
+
+            <div class="">
+                <a href="https://hiremyprofile.itsoftexpert.net/settings?professional_settings" class="d-flex align-items-center text-dark text-decoration-none">
+                    <i class="fas fa-briefcase me-2"></i>
+                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
+                    Professional Information <br> <input type="range" max="100" min="0" value="60">
+                </a>
+            </div>
+
+            <div class="">
+                <a href="https://hiremyprofile.itsoftexpert.net/proposals/create_proposal" class="d-flex align-items-center text-dark text-decoration-none">
+                    <i class="fas fa-pen-to-square me-2"></i>
+                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
+                    Service Creation <br> <input type="range" max="100" min="0" value="90">
+                </a>
+            </div>
+
+            <div class="">
+                <a href="https://hiremyprofile.itsoftexpert.net/settings?account_settings" class="d-flex align-items-center text-dark text-decoration-none">
+                    <i class="fas fa-cogs me-2"></i>
+                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
+                    Account Settings <br> <input type="range" max="100" min="0" value="100">
+                </a>
+            </div>
+            <p class="">
+                <a href="https://hiremyprofile.itsoftexpert.net/settings?profile_settings" class="text-decoration-none">
+                    Continue Setup <br> <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </p>
+        </div>
+        <div id="Professional_info12">
+            <h2>Professional Info</h2>
+            <hr>
+            <div id="add_skill">
+                <h3>Add Skill</h3>
+                <form action="">
+                    <div class="drdrdr">
+                        <div class="fdfdfd">
+                            <select name="select_catogory" id="">
+                                <option value="">Select A Category</option>
+                                <option value="1">Programming &amp; Tech</option>
+                                <option value="2">Graphics &amp; Design</option>
+                                <option value="3">Writing &amp; Translation</option>
+                                <option value="4">Digital Marketing</option>
+                                <option value="5">Photography </option>
+                                <option value="6">AI Services </option>
+                                <option value="7">Consulting  </option>
+                                <option value="8">Data &amp; Info  </option>
+                                <option value="9">Business</option>
+                                <option value="10">Personal Growth </option>
+                                <option value="11">Finance</option>
+                            </select>
+                        </div>
+                        <div class="fsdz">
+                            <button id="button" style="width: 180px;">Submit skill</button>
+                        </div>
+                    </div>
+                    
+                </form>
+                <div>
+                    <h3>Selected skills Details:</h3>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Sub Category</th>
+                            <th>Attributes</th>
+                            <th>Skills</th>
+                            <th>Level</th>
+                        </tr>
+
+                    </table>
+                    <div>
+                    &nbsp;   <b> No data insertd till now. </b>
+                    </div>
+                </div>
+            </div>
+            <div id="certification">
+                <h3>Certification</h3>
+                <form action="">
+                    <div id="first-row">
+                        <div>
+                            <label for="certificate_name">Certification Name</label>
+                            <input type="text" id="certificate_name" name="certificate_name">
+                        </div>
+                        <div>
+                            <label for="Issuing_Organization">Issuing Organization</label>
+                            <input type="text" id="Issuing_Organization" name="Issuing_Organization">
+                        </div>
+                    </div>
+                    <div id="second-row">
+                        <div>
+                            <label for="Issue_date">Issue_date</label>
+                            <input type="date" id="Issue_date" name="Issue_date">
+                        </div>
+                        <div>
+                            <label for="Expiration_date">Expiration date(optional)</label>
+                            <input type="date" id="Expiration_date" name="Expiration_date">
+                        </div>
+                    </div>
+                    <div id="third-row">
+                        <div>
+                            <label for="Certificate_Id">Certificate Id</label>
+                            <input type="text" id="Certificate Id" name="Certificate Id">
+                        </div>
+                        <div>
+                            <label for="Certificate_Url">Certificate Url</label>
+                            <input type="text" id="Certificate_Url" name="Certificate_Url">
+                        </div>
+                    </div>
+                    <label for="Upload_certificate">Upload Certificate</label>
+                    <input type="file" id="Upload_certificate" name="Upload_certificate">
+                    <br><br>
+                    <button id="button">Submit Certificate</button>
+                </form>
+            </div>
+            <div id="Experience">
+                <h3>Experience</h3>
+                <form action="">
+                    <div id="first-row">
+                        <div>
+                            <label for="Job_Title">Job Title</label>
+                            <input type="text" id="Job_Title" name="Job_Title">
+                        </div>
+                        <div>
+                            <label for="Organization">Organization</label>
+                            <input type="text" id="Organization" name="Organization">
+                        </div>
+                    </div id="second-row">
+                    <div>
+                        <div>
+                            <label for="From">From</label>
+                            <input type="date" id="From" name="From">
+                        </div>
+                        <div>
+                            <label for="To">To</label>
+                            <input type="text" id="From" name="To">
+                        </div>
+                    </div>
+                    <label for="working"><input type="checkbox" id="working" name="working"> Still Working</label>
+                    <label for="Discription">Discription</label>
+                    <textarea name="Discription" id="Discription"></textarea>
+                    <button id="button">Delete</button>
+                </form>
+                <button id="button">Add more exp</button>
+                <button id="button">Save Changes</button>
+                <h6>Note:</h6>
+            </div>
+            <div id="portfolio">
+                <h3>Portfolio</h3>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
