@@ -1,68 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <div id="sidebar">
-            <h2 class="">🚀 Profile Completion</h2>
-            <div class="d-flex justify-content-between align-items-center bg-light p-3 rounded mb-4">
-                <div>Profile Progress</div>
-                <div class="">
-                    <div class="" >
-                        0%
-                    </div>  
-                </div>
-            </div>
-
-            <div class="">
-                <a href="https://hiremyprofile.itsoftexpert.net/settings?profile_settings" class="d-flex align-items-center text-dark text-decoration-none">
-                    <i class="fas fa-user me-2"></i>
-                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
-                    Profile Settings (Complete to reach 30%)
-                </a>
-            </div>
-
-            <div class="">
-                <a href="https://hiremyprofile.itsoftexpert.net/settings?professional_settings" class="d-flex align-items-center text-dark text-decoration-none">
-                    <i class="fas fa-briefcase me-2"></i>
-                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
-                    Professional Information (Complete to reach 60%)
-                </a>
-            </div>
-
-            <div class="">
-                <a href="https://hiremyprofile.itsoftexpert.net/proposals/create_proposal" class="d-flex align-items-center text-dark text-decoration-none">
-                    <i class="fas fa-pen-to-square me-2"></i>
-                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
-                    Service Creation (Complete to reach 90%)
-                </a>
-            </div>
-
-            <div class="">
-                <a href="https://hiremyprofile.itsoftexpert.net/settings?account_settings" class="d-flex align-items-center text-dark text-decoration-none">
-                    <i class="fas fa-cogs me-2"></i>
-                    <i class="fa fa-refresh me-2 bg-secondary text-white p-1 rounded"></i>
-                    Account Settings (Complete to reach 100%)
-                </a>
-            </div>
-
-            <a href="https://hiremyprofile.itsoftexpert.net/settings?profile_settings" class="btn btn-primary w-100 mt-3">Continue Setup</a>
-
-            <p class="">
-                <a href="https://hiremyprofile.itsoftexpert.net/settings?profile_settings" class="text-decoration-none">
-                    Continue Setup <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-            </p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="acc_style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>🚀Profile Completion</h2>
         <div>
-            <h2>Account Settings</h2>
-            <hr>
-            <h3>Withdraw your earning</h3>
+          <h4>Profile Progress</h4>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
         </div>
+
+        <div class="step">
+          <label>👤 Profile Settings</label>
+          <input
+            type="range"
+            max="100"
+            min="0"
+            value="30"
+          />
+        </div>
+
+        <div class="step">
+          <label>💼 Professional Info</label>
+          <input
+            type="range"
+            max="100"
+            min="0"
+            value="60"
+          />
+        </div>
+
+        <div class="step">
+          <label>🛠️ Service Creation</label>
+          <input
+            type="range"
+            max="100"
+            min="0"
+            value="90"
+          />
+        </div>
+
+        <div class="step">
+          <label>⚙️ Account Settings</label>
+          <input
+            type="range"
+            max="100"
+            min="0"
+            value="100"
+          />
+        </div>
+
+        <div class="continue-btn"> Continue Setup →</div>
+      </aside>
+
+      <!-- Main Content -->
+      <section class="content">
+        <h1>Account Settings</h1>
+
+        <!-- PayPal Section -->
+        <div class="card">
+          <label for="paypal">Withdraw Your Earnings with PayPal</label>
+          <input
+            type="text"
+            id="paypal"
+            placeholder="Enter Paypal email address"
+          />
+          <button class="button">📧 Change Paypal Email</button>
+        </div>
+
+        <!-- Notifications Section -->
+        <div class="card">
+          <h3>REAL-TIME NOTIFICATIONS</h3>
+          <div class="two-columns">
+            <div>
+              <label>Enable/disable sound</label>
+              <select>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div>
+              <label>Enable Sliding Notifications</label>
+              <select>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <button class="button">🔄 Update Changes</button>
+        </div>
+
+        <!-- Password Change -->
+        <div class="card">
+          <h3>Change Password</h3>
+          <div class="two-columns">
+            <div>
+              <label>Enter Old Password</label>
+              <input type="password" />
+            </div>
+            <div>
+              <label>Enter New Password</label>
+              <input type="password" />
+            </div>
+            <div>
+              <label>Confirm New Password</label>
+              <input type="password" />
+            </div>
+          </div>
+          <button class="button">🔒 Change Password</button>
+        </div>
+        <hr />
+        <div>
+          <!-- Two Factor Verification Section -->
+          <section class="setting-section">
+            <h2>Two Factor Verification</h2>
+            <div class="toggle-section">
+              <label for="twoFactorToggle" class="toggle-label"
+                >Verification Enable/Disable</label
+              >
+              <label class="switch">
+                <input type="checkbox" id="twoFactorToggle" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <!-- Account Deactivation Section -->
+          <section class="setting-section">
+            <h2>ACCOUNT DEACTIVATION</h2>
+            <div class="deactivation-wrapper">
+              <div class="deactivation-info">
+                <p>What happens when you deactivate your account?</p>
+                <ul>
+                  <li>
+                    🛑 Your profile and services won't be shown on hiremyprofile
+                    anymore.
+                  </li>
+                  <li>🛑 Any open orders will be canceled and refunded.</li>
+                  <li>
+                    🛑 You won't be able to re-activate your proposals/services.
+                  </li>
+                  <li>🛑 You won't be able to restore your account.</li>
+                </ul>
+              </div>
+              <div class="deactivation-action">
+                <label for="reason">Choose A Reason</label>
+                <select id="reason" name="reason">
+                  <option value="" disabled selected>Choose A Reason</option>
+                  <option value="quality">
+                    The quality of service was less than expected
+                  </option>
+                  <option value="no-time">I just don't have the time</option>
+                  <option value="not-finding">
+                    I can’t find what I am looking for
+                  </option>
+                  <option value="bad-experience">
+                    I had a bad experience with a seller / buyer
+                  </option>
+                  <option value="difficult-to-use">
+                    I found the site difficult to use
+                  </option>
+                  <option value="customer-service">
+                    The level of customer service was less than expected
+                  </option>
+                  <option value="another-account">
+                    I have another account
+                  </option>
+                  <option value="not-enough-orders">
+                    I'm not receiving enough orders
+                  </option>
+                  <option value="other">Other</option>
+                </select>
+
+                <button class="deactivate-btn">🚫 Deactivate Account</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
